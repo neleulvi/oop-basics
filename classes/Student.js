@@ -35,7 +35,12 @@ class Student extends Person {
             
         } 
     description(){
-        return `Student ${this.name}, id: ${this.getIf}, hinded: ${this.getGrades()}`
+        return `Student ${this.name}`
     }
 }
+
+const student4 = new Student("Nele Ulvi")
+student4.addGrade(3)
+student4.addGrade(5)
+console.log(student4)
 module.exports = Student

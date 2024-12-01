@@ -15,7 +15,7 @@ class Person {
         return this.name
     }
     description(){
-        return `Person ${this.name}, synniaasta ${this.getDateOfBirth}, vanus ${this.age()}`
+        return `Person ${this.name}`
     }
 }
 

@@ -38,7 +38,7 @@ school.addCourse(course3)
 //we cannot add one course twice
 school.addCourse(course1)
 
-console.log(school.getCourses().length) // 3
+//console.log(school.getCourses().length) // 3
 console.log(school.getCourses())
 
 school.addStudentGrade(student1, course1, 4)
@@ -53,31 +53,29 @@ school.addStudentGrade(student3, course3, 1)
 
 //cannot add grades to the student who is not in the school
 
-
 //console.log(student3.getGrades().length) // 0
 
 //school.addStudent(student3)
 
 
 console.log(student1.getGrades())
-console.log(student2.getGrades())
+//console.log(student2.getGrades())
 //console.log(student3.getGrades().length) // 2
 
 
 //console.log(course1.getGrades())  
-//console.log(course2.getGrades()) 
-//console.log(course3.getGrades()) 
 
-//console.log("Students ordered by average grade:")
-//console.log("Student - avg grade")
-//console.log("-".repeat(30))
-//console.log(school.getStudentsOrderedByAverageGrade())
-//console.log("-".repeat(30))
-//school.getStudentsOrderedByAverageGrade().forEach((student) => {
-//    console.log(student.name, student.getAverageGrade())
-//})
-//console.log() see andis tühja rea
-//console.log("Course average grades")
+
+console.log("Students ordered by average grade:")
+console.log("Student - avg grade")
+console.log("-".repeat(30))
+console.log(school.getStudentsOrderedByAverageGrade())
+console.log("-".repeat(30))
+school.getStudentsOrderedByAverageGrade().forEach((student) => {
+   console.log(student.name, student.getAverageGrade())
+})
+
+console.log("Course average grades")
 school.getCourses().forEach((course) => {
     console.log(course.name, course.getAverageGrade())
 })

@@ -1,5 +1,4 @@
 
-
 class School {
     constructor(name){
         this.name = name;
