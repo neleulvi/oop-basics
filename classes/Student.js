@@ -23,15 +23,19 @@ class Student extends Person {
         }
         this.grades.push(newGrade)
     }
-    getAverageGrade(){
-        if(this.grades.length === 0){
+    getAverageGrade(){        
+        if(this.grades.length === 0) {
             return -1
-        }else{
-            return 0
+        } else {
+        // Sum all the grades
+        let sum = this.grades.reduce((acc, currentValue) => acc + currentValue.grade, 0);
+        // Return the average grade
+        return sum / this.grades.length;
         }
-    }
+            
+        } 
     description(){
-        return `Student ${this.name}.`
+        return `Student ${this.name}, id: ${this.getIf}, hinded: ${this.getGrades()}`
     }
 }
 module.exports = Student

@@ -1,3 +1,5 @@
+
+
 class School {
     constructor(name){
         this.name = name;
@@ -33,7 +35,10 @@ class School {
         }
     }
     getStudentsOrderedByAverageGrade(){
-        return 
+        //sort()meetod järjestab massiivi , kui me ei ütle, mille alusel võrrelda, kasut
+        //võrldusfunktsiooni, parameetrid a ja b, need on järjestatud elementide paarid, mida võrrelda
+        //b tuleb enne a sest tahame, et kõrgem keskmine oleks enne
+        return this.students.sort((a,b) => b.getAverageGrade() - a.getAverageGrade())
     }
 }
 
